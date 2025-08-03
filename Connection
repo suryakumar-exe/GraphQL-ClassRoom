@@ -1,1 +1,112 @@
 response file.
+mutation
+{
+  startMockTest(userId: 1,title: "First Attempt",timeLimitMinutes: 5){
+    success,
+    message,
+    mockTestAttempt
+    {
+      id,
+      title,startedAt,
+      totalQuestions,
+    }
+    questions
+    {
+      id,
+      questionText,
+      questionTextTamil,
+      options
+      {
+        id,
+        questionId
+        optionText,
+        optionTextTamil,
+        isCorrect
+      }
+
+    }
+  }
+}
+
+response,
+mutation {
+  submitMockTestAnswers(
+    mockTestAttemptId: 2,
+    answers: [
+      { questionId: 45, selectedOptionId: 177 }
+      { questionId: 56, selectedOptionId: 223 }
+      { questionId: 51, selectedOptionId: 201 }
+      { questionId: 4, selectedOptionId: 13 }
+      { questionId: 34, selectedOptionId: 134 }
+      { questionId: 69, selectedOptionId: 274 }
+      { questionId: 17, selectedOptionId: 67 }
+      { questionId: 78, selectedOptionId: 311 }
+      { questionId: 60, selectedOptionId: 237 }
+      { questionId: 65, selectedOptionId: 258 }
+      { questionId: 26, selectedOptionId: 102 }
+      { questionId: 3, selectedOptionId: 10 }
+      { questionId: 25, selectedOptionId: 99 }
+      { questionId: 71, selectedOptionId: 283 }
+      { questionId: 76, selectedOptionId: 304 }
+      { questionId: 102, selectedOptionId: 405 }
+      { questionId: 8, selectedOptionId: 31 }
+      { questionId: 81, selectedOptionId: 321 }
+      { questionId: 19, selectedOptionId: 73 }
+      { questionId: 97, selectedOptionId: 385 }
+      { questionId: 73, selectedOptionId: 289 }
+      { questionId: 107, selectedOptionId: 425 }
+      { questionId: 2, selectedOptionId: 5 }
+      { questionId: 90, selectedOptionId: 357 }
+      { questionId: 44, selectedOptionId: 174 }
+      { questionId: 39, selectedOptionId: 153 }
+      { questionId: 84, selectedOptionId: 334 }
+      { questionId: 91, selectedOptionId: 361 }
+      { questionId: 63, selectedOptionId: 251 }
+      { questionId: 47, selectedOptionId: 185 }
+      { questionId: 33, selectedOptionId: 130 }
+      { questionId: 43, selectedOptionId: 171 }
+      { questionId: 80, selectedOptionId: 317 }
+      { questionId: 87, selectedOptionId: 346 }
+      { questionId: 20, selectedOptionId: 78 }
+      { questionId: 105, selectedOptionId: 417 }
+      { questionId: 15, selectedOptionId: 58 }
+      { questionId: 92, selectedOptionId: 365 }
+      { questionId: 50, selectedOptionId: 198 }
+      { questionId: 59, selectedOptionId: 234 }
+      { questionId: 36, selectedOptionId: 141 }
+      { questionId: 23, selectedOptionId: 90 }
+      { questionId: 61, selectedOptionId: 242 }
+      { questionId: 28, selectedOptionId: 110 }
+      { questionId: 27, selectedOptionId: 106 }
+      { questionId: 99, selectedOptionId: 393 }
+      { questionId: 54, selectedOptionId: 215 }
+      { questionId: 96, selectedOptionId: 381 }
+      { questionId: 57, selectedOptionId: 225 }
+      { questionId: 10, selectedOptionId: 38 }
+      { questionId: 75, selectedOptionId: 299 }
+      { questionId: 74, selectedOptionId: 293 }
+      { questionId: 5, selectedOptionId: 18 }
+      { questionId: 79, selectedOptionId: 314 }
+      { questionId: 53, selectedOptionId: 209 }
+      { questionId: 98, selectedOptionId: 389 }
+      { questionId: 29, selectedOptionId: 113 }
+      { questionId: 30, selectedOptionId: 118 }
+      { questionId: 94, selectedOptionId: 373 }
+      { questionId: 86, selectedOptionId: 341 }
+      { questionId: 77, selectedOptionId: 305 }
+      { questionId: 108, selectedOptionId: 429 }
+      { questionId: 40, selectedOptionId: 159 }
+      { questionId: 82, selectedOptionId: 325 }
+      { questionId: 7, selectedOptionId: 26 }
+      { questionId: 83, selectedOptionId: 332 } 
+      { questionId: 93, selectedOptionId: 369 }
+    ]
+  ) {
+    success
+    message
+    score
+    correctAnswers
+    wrongAnswers
+    unansweredQuestions
+  }
+}
