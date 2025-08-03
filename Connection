@@ -168,137 +168,152 @@ mutation
 
     }
   }
-}
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:6:26 - error TS2339: Property 'new' does not exist on type 'MockTestStartComponent'.
+}Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:25:70 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-6         Current Time: {{ new Date().toLocaleString() }}
-                           ~~~
+25                                 <div class="score-number">{{ result?.score || 0 }}%</div>
+                                                                        ~~~~~
 
-  src/app/features/mock-test/mock-test-start/mock-test-start.component.ts:10:18
-    10     templateUrl: './mock-test-start.component.html',
-                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestStartComponent.
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:8:9 - error NG5002: Parser Error: Unexpected token 'Date'     
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:29:98 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:15:72 - error NG5002: Parser Error: Unexpected token 'Date'   
+29                                 <span class="badge" [class]="'bg-' + getPerformanceColor(result?.score || 0)">
+                                                                                                    ~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:41:44 - error NG5002: Parser Error: Unexpected token 'Date'   
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:41:70 - error NG5002: Parser Error: Unexpected token 'Date'   
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:46:66 - error NG5002: Parser Error: Unexpected token 'Date'   
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:30:68 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:48:63 - error NG5002: Parser Error: Unexpected token 'Date'   
+30                                     {{ getPerformanceLevel(result?.score || 0) }}
+                                                                      ~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:49:54 - error NG5002: Parser Error: Unexpected token 'Date'   
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:50:57 - error NG5002: Parser Error: Unexpected token 'Date'   
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:54:77 - error NG5002: Parser Error: Unexpected token 'Date'   
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:44:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:55:82 - error NG5002: Parser Error: Unexpected token 'Date'   
+44                                     <div class="metric-value">{{ result?.correctAnswers || 0 }}</div>
+                                                                            ~~~~~~~~~~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:59:57 - error NG5002: Parser Error: Unexpected token 'Date'   
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:63:57 - error NG5002: Parser Error: Unexpected token 'Date'   
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:73:55 - error NG5002: Parser Error: Unexpected token 'Date'   
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:55:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:97:55 - error NG5002: Parser Error: Unexpected token 'Date'   
+55                                     <div class="metric-value">{{ result?.wrongAnswers || 0 }}</div>
+                                                                            ~~~~~~~~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:101:67 - error NG5002: Parser Error: Unexpected token 'Date'  
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:102:54 - error NG5002: Parser Error: Unexpected token 'Date'  
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:103:45 - error NG5002: Parser Error: Unexpected token 'Date'  
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:66:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:109:51 - error NG5002: Parser Error: Unexpected token 'Date'  
+66                                     <div class="metric-value">{{ result?.unansweredQuestions || 0 }}</div>
+                                                                            ~~~~~~~~~~~~~~~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:113:51 - error NG5002: Parser Error: Unexpected token 'Date'  
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:129:103 - error NG5002: Parser Error: Unexpected token 'Date' 
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:134:49 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:135:43 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:139:43 - error NG5002: Parser Error: Unexpected token 'Date'  
 
 
 
 ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
 
-× Failed to compile.
+√ Compiled successfully.
 ✔ Browser application bundle generation complete.
 
 
 
 14 unchanged chunks
 
-Build at: 2025-08-03T06:07:25.139Z - Hash: aba5d3cf787a5509 - Time: 569ms
+Build at: 2025-08-03T06:22:32.042Z - Hash: 2de7815452f62646 - Time: 646ms
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:6:9 - error NG5002: Parser Error: Unexpected token 'Date'     
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:25:70 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:6:26 - error TS2339: Property 'new' does not exist on type 'MockTestStartComponent'.
+25                                 <div class="score-number">{{ result?.score || 0 }}%</div>
+                                                                        ~~~~~
 
-6         Current Time: {{ new Date().toLocaleString() }}
-                           ~~~
-
-  src/app/features/mock-test/mock-test-start/mock-test-start.component.ts:10:18
-    10     templateUrl: './mock-test-start.component.html',
-                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestStartComponent.
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:8:9 - error NG5002: Parser Error: Unexpected token 'Date'     
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:29:98 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:15:72 - error NG5002: Parser Error: Unexpected token 'Date'   
+29                                 <span class="badge" [class]="'bg-' + getPerformanceColor(result?.score || 0)">
+                                                                                                    ~~~~~
 
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:41:44 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:41:70 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:46:66 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:48:63 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:49:54 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:50:57 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:54:77 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:55:82 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:59:57 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:63:57 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:73:55 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:97:55 - error NG5002: Parser Error: Unexpected token 'Date'   
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:101:67 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:102:54 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:103:45 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:109:51 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:113:51 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:129:103 - error NG5002: Parser Error: Unexpected token 'Date' 
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:134:49 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:135:43 - error NG5002: Parser Error: Unexpected token 'Date'  
-
-Error: src/app/features/mock-test/mock-test-start/mock-test-start.component.html:139:43 - error NG5002: Parser Error: Unexpected token 'Date'  
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
 
 
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:30:68 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
 
-× Failed to compile.
+30                                     {{ getPerformanceLevel(result?.score || 0) }}
+                                                                      ~~~~~
+
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
+
+
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:44:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
+
+44                                     <div class="metric-value">{{ result?.correctAnswers || 0 }}</div>
+                                                                            ~~~~~~~~~~~~~~
+
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
+
+
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:55:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
+
+55                                     <div class="metric-value">{{ result?.wrongAnswers || 0 }}</div>
+                                                                            ~~~~~~~~~~~~
+
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
+
+
+Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:66:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
+
+66                                     <div class="metric-value">{{ result?.unansweredQuestions || 0 }}</div>
+                                                                            ~~~~~~~~~~~~~~~~~~~
+
+  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
+    9     templateUrl: './mock-test-result.component.html',
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component MockTestResultComponent.
+
+
+
+
+√ Compiled successfully.
