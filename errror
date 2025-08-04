@@ -1,0 +1,39 @@
+Error: src/app/features/quiz/quiz-play/quiz-play.component.html:55:74 - error TS2341: Property 'router' is private and only accessible within class 'QuizPlayComponent'.
+
+55                                 <button class="btn btn-primary" (click)="router.navigate(['/quiz/start'])">
+                                                                            ~~~~~~
+
+  src/app/features/quiz/quiz-play/quiz-play.component.ts:26:18
+    26     templateUrl: './quiz-play.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component QuizPlayComponent.
+
+
+
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+× Failed to compile.
+✔ Browser application bundle generation complete.
+
+
+
+14 unchanged chunks
+
+Build at: 2025-08-04T05:45:44.791Z - Hash: 7d3dea0c895358c1 - Time: 743ms
+
+Error: src/app/features/quiz/quiz-play/quiz-play.component.html:55:74 - error TS2341: Property 'router' is private and only accessible within class 'QuizPlayComponent'.
+
+55                                 <button class="btn btn-primary" (click)="router.navigate(['/quiz/start'])">
+                                                                            ~~~~~~
+
+  src/app/features/quiz/quiz-play/quiz-play.component.ts:26:18
+    26     templateUrl: './quiz-play.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component QuizPlayComponent.
+
+
+
+
+× Failed to compile.
