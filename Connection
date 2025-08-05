@@ -1,319 +1,178 @@
-response file.
-https://chatgpt.com/share/68920819-3970-8000-96d9-3b53a4aaac20
-mutation
-{
-  startMockTest(userId: 1,title: "First Attempt",timeLimitMinutes: 5){
-    success,
-    message,
-    mockTestAttempt
-    {
-      id,
-      title,startedAt,
-      totalQuestions,
-    }
-    questions
-    {
-      id,
-      questionText,
-      questionTextTamil,
-      options
-      {
-        id,
-        questionId
-        optionText,
-        optionTextTamil,
-        isCorrect
-      }
-
-    }
-  }
-}
-
-mutation
-{
-  startMockTest(userId: 1,title: "First Attempt",timeLimitMinutes: 5){
-    success,
-    message,
-    mockTestAttempt
-    {
-      id,
-      title,startedAt,
-      totalQuestions,
-    }
-    questions
-    {
-      id,
-      questionText,
-      questionTextTamil,
-      options
-      {
-        id,
-        questionId
-        optionText,
-        optionTextTamil,
-        isCorrect
-      }
-
-    }
-  }
-}
-
-response,
-mutation {
-  submitMockTestAnswers(
-    mockTestAttemptId: 2,
-    answers: [
-      { questionId: 45, selectedOptionId: 177 }
-      { questionId: 56, selectedOptionId: 223 }
-      { questionId: 51, selectedOptionId: 201 }
-      { questionId: 4, selectedOptionId: 13 }
-      { questionId: 34, selectedOptionId: 134 }
-      { questionId: 69, selectedOptionId: 274 }
-      { questionId: 17, selectedOptionId: 67 }
-      { questionId: 78, selectedOptionId: 311 }
-      { questionId: 60, selectedOptionId: 237 }
-      { questionId: 65, selectedOptionId: 258 }
-      { questionId: 26, selectedOptionId: 102 }
-      { questionId: 3, selectedOptionId: 10 }
-      { questionId: 25, selectedOptionId: 99 }
-      { questionId: 71, selectedOptionId: 283 }
-      { questionId: 76, selectedOptionId: 304 }
-      { questionId: 102, selectedOptionId: 405 }
-      { questionId: 8, selectedOptionId: 31 }
-      { questionId: 81, selectedOptionId: 321 }
-      { questionId: 19, selectedOptionId: 73 }
-      { questionId: 97, selectedOptionId: 385 }
-      { questionId: 73, selectedOptionId: 289 }
-      { questionId: 107, selectedOptionId: 425 }
-      { questionId: 2, selectedOptionId: 5 }
-      { questionId: 90, selectedOptionId: 357 }
-      { questionId: 44, selectedOptionId: 174 }
-      { questionId: 39, selectedOptionId: 153 }
-      { questionId: 84, selectedOptionId: 334 }
-      { questionId: 91, selectedOptionId: 361 }
-      { questionId: 63, selectedOptionId: 251 }
-      { questionId: 47, selectedOptionId: 185 }
-      { questionId: 33, selectedOptionId: 130 }
-      { questionId: 43, selectedOptionId: 171 }
-      { questionId: 80, selectedOptionId: 317 }
-      { questionId: 87, selectedOptionId: 346 }
-      { questionId: 20, selectedOptionId: 78 }
-      { questionId: 105, selectedOptionId: 417 }
-      { questionId: 15, selectedOptionId: 58 }
-      { questionId: 92, selectedOptionId: 365 }
-      { questionId: 50, selectedOptionId: 198 }
-      { questionId: 59, selectedOptionId: 234 }
-      { questionId: 36, selectedOptionId: 141 }
-      { questionId: 23, selectedOptionId: 90 }
-      { questionId: 61, selectedOptionId: 242 }
-      { questionId: 28, selectedOptionId: 110 }
-      { questionId: 27, selectedOptionId: 106 }
-      { questionId: 99, selectedOptionId: 393 }
-      { questionId: 54, selectedOptionId: 215 }
-      { questionId: 96, selectedOptionId: 381 }
-      { questionId: 57, selectedOptionId: 225 }
-      { questionId: 10, selectedOptionId: 38 }
-      { questionId: 75, selectedOptionId: 299 }
-      { questionId: 74, selectedOptionId: 293 }
-      { questionId: 5, selectedOptionId: 18 }
-      { questionId: 79, selectedOptionId: 314 }
-      { questionId: 53, selectedOptionId: 209 }
-      { questionId: 98, selectedOptionId: 389 }
-      { questionId: 29, selectedOptionId: 113 }
-      { questionId: 30, selectedOptionId: 118 }
-      { questionId: 94, selectedOptionId: 373 }
-      { questionId: 86, selectedOptionId: 341 }
-      { questionId: 77, selectedOptionId: 305 }
-      { questionId: 108, selectedOptionId: 429 }
-      { questionId: 40, selectedOptionId: 159 }
-      { questionId: 82, selectedOptionId: 325 }
-      { questionId: 7, selectedOptionId: 26 }
-      { questionId: 83, selectedOptionId: 332 } 
-      { questionId: 93, selectedOptionId: 369 }
-    ]
-  ) {
-    success
-    message
-    score
-    correctAnswers
-    wrongAnswers
-    unansweredQuestions
-  }
-}
-
-mutation
-{
-  startMockTest(userId: 1,title: "First Attempt",timeLimitMinutes: 5){
-    success,
-    message,
-    mockTestAttempt
-    {
-      id,
-      title,startedAt,
-      totalQuestions,
-    }
-    questions
-    {
-      id,
-      questionText,
-      questionTextTamil,
-      options
-      {
-        id,
-        questionId
-        optionText,
-        optionTextTamil,
-        isCorrect
-      }
-
-    }
-  }
-}Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:25:70 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-25                                 <div class="score-number">{{ result?.score || 0 }}%</div>
-                                                                        ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:29:98 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-29                                 <span class="badge" [class]="'bg-' + getPerformanceColor(result?.score || 0)">
-                                                                                                    ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:30:68 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-30                                     {{ getPerformanceLevel(result?.score || 0) }}
-                                                                      ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:44:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-44                                     <div class="metric-value">{{ result?.correctAnswers || 0 }}</div>
-                                                                            ~~~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:55:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-55                                     <div class="metric-value">{{ result?.wrongAnswers || 0 }}</div>
-                                                                            ~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:66:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-66                                     <div class="metric-value">{{ result?.unansweredQuestions || 0 }}</div>
-                                                                            ~~~~~~~~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-
-
-** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
-
-
-√ Compiled successfully.
-✔ Browser application bundle generation complete.
-
-
-
-14 unchanged chunks
-
-Build at: 2025-08-03T06:22:32.042Z - Hash: 2de7815452f62646 - Time: 646ms
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:25:70 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-25                                 <div class="score-number">{{ result?.score || 0 }}%</div>
-                                                                        ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:29:98 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-29                                 <span class="badge" [class]="'bg-' + getPerformanceColor(result?.score || 0)">
-                                                                                                    ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:30:68 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-30                                     {{ getPerformanceLevel(result?.score || 0) }}
-                                                                      ~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:44:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-44                                     <div class="metric-value">{{ result?.correctAnswers || 0 }}</div>
-                                                                            ~~~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:55:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-55                                     <div class="metric-value">{{ result?.wrongAnswers || 0 }}</div>
-                                                                            ~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-Warning: src/app/features/mock-test/mock-test-result/mock-test-result.component.html:66:74 - warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.
-
-66                                     <div class="metric-value">{{ result?.unansweredQuestions || 0 }}</div>
-                                                                            ~~~~~~~~~~~~~~~~~~~
-
-  src/app/features/mock-test/mock-test-result/mock-test-result.component.ts:9:18
-    9     templateUrl: './mock-test-result.component.html',
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component MockTestResultComponent.
-
-
-
-
-√ Compiled successfully.
+PM> dotnet ef migrations add FixedMigrartion2
+Build started...
+Build succeeded.
+[19:12:15 WRN] The foreign key property 'ApplicationUser.TeamId1' was created in shadow state because a conflicting property with the simple name 'TeamId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[19:12:15 WRN] The foreign key property 'ApplicationUser.TeamId1' was created in shadow state because a conflicting property with the simple name 'TeamId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy.
+Done. To undo this action, use 'ef migrations remove'
+PM> dotnet ef database update
+Build started...
+Build succeeded.
+[19:12:29 WRN] The foreign key property 'ApplicationUser.TeamId1' was created in shadow state because a conflicting property with the simple name 'TeamId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[19:12:29 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+[19:12:29 INF] Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:12:29 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+[19:12:29 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:12:29 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[19:12:29 INF] Applying migration '20250805124925_InitialCreate'.
+[19:12:30 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PublicHolidays] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Date] datetime2 NOT NULL,
+    [Description] nvarchar(500) NULL,
+    [IsActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [CreatedBy] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_PublicHolidays] PRIMARY KEY ([Id])
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Teams] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_Teams] PRIMARY KEY ([Id])
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(100) NOT NULL,
+    [LastName] nvarchar(100) NOT NULL,
+    [EmployeeId] nvarchar(100) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [LastLoginAt] datetime2 NULL,
+    [IsActive] bit NOT NULL,
+    [TeamId] int NULL,
+    [TeamId1] int NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUsers_Teams_TeamId] FOREIGN KEY ([TeamId]) REFERENCES [Teams] ([Id]) ON DELETE SET NULL,
+    CONSTRAINT [FK_AspNetUsers_Teams_TeamId1] FOREIGN KEY ([TeamId1]) REFERENCES [Teams] ([Id])
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AuditLogs] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [EntityName] nvarchar(100) NOT NULL,
+    [EntityId] int NULL,
+    [Action] int NOT NULL,
+    [OldValues] nvarchar(1000) NULL,
+    [NewValues] nvarchar(1000) NULL,
+    [Description] nvarchar(500) NULL,
+    [IpAddress] nvarchar(45) NULL,
+    [UserAgent] nvarchar(500) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_AuditLogs] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AuditLogs_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[19:12:30 ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Leaves] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [StartDate] datetime2 NOT NULL,
+    [EndDate] datetime2 NOT NULL,
+    [Type] int NOT NULL,
+    [Reason] nvarchar(500) NULL,
+    [Status] int NOT NULL,
+    [ApprovedBy] nvarchar(450) NULL,
+    [ApprovedAt] datetime2 NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Leaves] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Leaves_AspNetUsers_ApprovedBy] FOREIGN KEY ([ApprovedBy]) REFERENCES [AspNetUsers] ([Id]) ON DELETE SET NULL,
+    CONSTRAINT [FK_Leaves_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+Microsoft.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Leaves_AspNetUsers_UserId' on table 'Leaves' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean isAsync, Int32 timeout, Boolean asyncWrite)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.Design.Internal.MigrationsOperations.UpdateDatabase(String targetMigration, String connectionString, String contextType)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabaseImpl(String targetMigration, String connectionString, String contextType)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabase.<>c__DisplayClass0_0.<.ctor>b__0()
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.OperationBase.Execute(Action action)
+ClientConnectionId:91ee8093-a6ec-45c8-b967-a9ea97dc7b6f
+Error Number:1785,State:0,Class:16
+Introducing FOREIGN KEY constraint 'FK_Leaves_AspNetUsers_UserId' on table 'Leaves' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
